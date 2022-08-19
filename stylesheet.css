@@ -7,6 +7,12 @@ body {
     text-align: justify;
 }
 
+.gradient-text {
+    background-image: linear-gradient(60deg, #7e43aa, #6681ea);
+    background-clip: text;
+    color: transparent;
+  }
+
 h1 {
     font-family: 'Averia Serif Libre', cursive;
     font-size: 700;

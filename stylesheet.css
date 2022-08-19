@@ -10,7 +10,6 @@ body {
 .gradient-text {
     background-image: linear-gradient(60deg, #7e43aa, #6681ea);
     background-clip: text;
-    color: transparent;
   }
 
 h1 {

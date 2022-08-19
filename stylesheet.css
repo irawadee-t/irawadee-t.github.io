@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
 
 body {
     font-family: 'Figtree', sans-serif;
+    margin: auto;
+    width: 60%;
 }
 
 h1 {
     font-family: 'Figtree', sans-serif;
+    font-size: 800;
+}
+
+h2 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 700;
+}
+
+h3 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 600;
 }
 
 p {
     font-family: 'Figtree', sans-serif;
+    font-size: 300;
 }

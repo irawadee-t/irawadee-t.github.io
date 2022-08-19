@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Figtree:wght@400;500;600;700;800&display=swap');
 
 body {
     font-family: 'Figtree', sans-serif;
@@ -8,13 +8,14 @@ body {
 }
 
 h1 {
-    font-family: 'Figtree', sans-serif;
-    font-size: 800;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 700;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: 'Figtree', sans-serif;
-    font-size: 700;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 400;
 }
 
 h3 {

@@ -39,9 +39,9 @@ body {
 }
 
 .nav-header h1 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .gradient-text {
@@ -50,6 +50,17 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+    border: 3px solid #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {

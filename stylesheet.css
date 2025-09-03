@@ -36,6 +36,8 @@ body {
 .nav-header {
     margin-bottom: 2rem;
     text-align: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 .nav-header h1 {

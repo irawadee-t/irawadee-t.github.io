@@ -1,35 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Figtree:wght@400;500;600;700;800&family=Trispace:wght@200;300;400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Figtree', sans-serif;
-    margin: auto;
-    width: 57%;
-    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 280px;
+    background-color: #f8f9fa;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid #e9ecef;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.nav-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.nav-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .gradient-text {
     background-image: linear-gradient(60deg, #7e43aa, #6681ea);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
-  }
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.nav-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #495057;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #7e43aa;
+}
+
+.nav-link.active {
+    background-color: #7e43aa;
+    color: white;
+}
+
+.contact-links {
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.9rem;
+}
+
+.contact-links p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+    color: #7e43aa;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 3rem 4rem;
+    max-width: 800px;
+}
 
 h1 {
     font-family: 'Figtree', sans-serif;
-    font-size: 700;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #2c3e50;
 }
 
 h2 {
     font-family: 'Averia Serif Libre', cursive;
-    font-size: 400;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #34495e;
 }
 
 h3 {
     font-family: 'Figtree', sans-serif;
-    font-size: 600;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+    color: #34495e;
+}
+
+h4 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+    color: #34495e;
 }
 
 p {
     font-family: 'Figtree', sans-serif;
-    font-size: 300;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #7e43aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 2rem 1.5rem;
+    }
+    
+    .container.sidebar-open .sidebar {
+        transform: translateX(0);
+    }
 }

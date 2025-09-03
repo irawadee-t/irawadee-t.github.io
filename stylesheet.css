@@ -70,6 +70,8 @@ body {
     margin-bottom: 3rem;
     flex-grow: 1;
     text-align: left;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 }
 
 .nav-menu li {
